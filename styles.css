@@ -61,6 +61,11 @@ h3 {
 .product-img {
     border-radius: 0.8rem;
     object-fit: cover;
+    transition: all .3s;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
 }
 
 .btn {
