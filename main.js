@@ -155,7 +155,7 @@ const renderCart = () => {
     cartItemsContainer.insertAdjacentHTML('beforeend', itemHtml);
   });
 
-  cartTotalPrice.textContent = `${total.toFixed(2)}`;
+  cartTotalPrice.textContent = `$${total.toFixed(2)}`;
 
   const hasItems = cartData.length > 0;
   cartEmpty.classList.toggle('hidden', hasItems);
