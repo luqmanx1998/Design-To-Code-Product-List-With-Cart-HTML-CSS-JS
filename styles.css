@@ -19,6 +19,7 @@
     box-sizing: inherit;
 }
 
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -61,7 +62,7 @@ h3 {
 .product-img {
     border-radius: 0.8rem;
     object-fit: cover;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 .product-img:hover {
@@ -406,6 +407,16 @@ h3 {
   .highlight {
     border: 2px solid var(--red);
   }
+
+@media only screen and (min-width: 375px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2.5rem;
+        row-gap: 3.5rem;
+    }
+}
+
   
 @media only screen and (min-width: 1200px) {
     .container {
@@ -413,7 +424,6 @@ h3 {
         max-width: 122rem;
         margin: 7rem auto;
         gap: 3rem;
-        align-items: flex-start;
     }
 
     h1 {
@@ -425,10 +435,7 @@ h3 {
     }
 
     .product-list {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 2.5rem;
-        row-gap: 3.5rem;
     }
 
     .product-item {
